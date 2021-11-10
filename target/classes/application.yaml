@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://database-1.ciuwmj8sevzn.us-east-2.rds.amazonaws.com:3306/emsdb?user=admin
+    username: admin
+    password: 12345678
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    database-platform:
+      org.hibernate.dialect.MySQL8Dialect
+
+server:
+  port: 8080
+
